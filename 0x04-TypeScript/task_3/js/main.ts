@@ -1,7 +1,7 @@
 /// <reference path="./js/crud.d.ts" />
 
 import { RowID, RowElement } from './interface';
-import * as CRUD from './js/crud';
+import * as CRUD from './crud';
 
 // Create a row object
 const row: RowElement = {

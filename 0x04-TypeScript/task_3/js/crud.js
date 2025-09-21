@@ -1,4 +1,4 @@
-// js/crud.js
+
 
 export function insertRow(row) {
   console.log('Insert row', row);
