@@ -1,5 +1,6 @@
+// task_1/js/main.ts
 
-
+// Base Teacher interface
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -11,7 +12,7 @@ interface Teacher {
 
 // Directors extends Teacher
 interface Directors extends Teacher {
-  numberOfReports: number;   // mandatory property
+  numberOfReports: number;   // required property
 }
 
 // Example usage
