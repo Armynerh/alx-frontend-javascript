@@ -1,6 +1,6 @@
 // task_1/js/main.ts
 
-// Base Teacher interface
+// Teacher interface
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -10,9 +10,9 @@ interface Teacher {
   [propName: string]: any;
 }
 
-// Directors extends Teacher
+// Directors interface extending Teacher
 interface Directors extends Teacher {
-  numberOfReports: number;   // required property
+  numberOfReports: number;
 }
 
 // Example usage
