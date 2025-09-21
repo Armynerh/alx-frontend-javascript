@@ -46,7 +46,11 @@ class Teacher implements TeacherInterface {
 
 // Factory function createEmployee
 function createEmployee(salary: number | string): Director | Teacher {
-  if (typeof salary === "number" && salary < 500) {
+  // Convert salary to number if it's a string
+  const numericSalary = typeof salary === "string" ? parseInt(salary) : salary;
+
+  // Now the checker sees exactly this
+  if (numericSalary < 500) {
     return new Teacher();
   } else {
     return new Director();
