@@ -1,21 +1,26 @@
-// teacher.ts
+
 
 interface Teacher {
-  readonly firstName: string;        // only settable at initialization
-  readonly lastName: string;         // only settable at initialization
-  fullTimeEmployee: boolean;         // always defined
-  yearsOfExperience?: number;        // optional
-  location: string;                  // always defined
-  [propName: string]: any;           // allow any extra properties
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  location: string;
+  yearsOfExperience?: number;
+  [propName: string]: any;
+}
+
+// Directors extends Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;   // mandatory property
 }
 
 // Example usage
-const teacher3: Teacher = {
+const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
-  fullTimeEmployee: false,
   location: 'London',
-  contract: false,   // extra attribute allowed
+  fullTimeEmployee: true,
+  numberOfReports: 17,
 };
 
-console.log(teacher3);
+console.log(director1);
