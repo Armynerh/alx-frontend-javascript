@@ -1,4 +1,3 @@
-// task_1/js/main.ts
 
 // Teacher interface
 interface Teacher {
@@ -20,10 +19,10 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Implementation of printTeacher
-const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
-  return `${firstName.charAt(0)}. ${lastName}`;
-};
+// Implementation of printTeacher using function keyword + destructuring
+function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
+  return `${firstName}. ${lastName}`;
+}
 
 // Example usage
-console.log(printTeacher("John", "Doe")); // J. Doe
+console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // J. Doe
