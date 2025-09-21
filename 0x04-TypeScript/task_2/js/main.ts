@@ -91,13 +91,15 @@ export function executeWork(employee: Director | Teacher): string {
 
 type Subjects = 'Math' | 'History';
 
-function teachClass(todayClass: Subjects): string {
+// teachClass function with exact parameter type formatting
+function teachClass(todayClass:Subjects): string {
   if (todayClass === 'Math') {
     return 'Teaching Math';
   } else if (todayClass === 'History') {
     return 'Teaching History';
   }
 }
+
 
 // ==========================
 // Example Usage
