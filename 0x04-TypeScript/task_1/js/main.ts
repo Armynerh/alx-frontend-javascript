@@ -27,6 +27,7 @@ function printTeacher({ firstName, lastName }: { firstName: string; lastName: st
 // Example usage
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // J. Doe
 
+
 // Student interface
 interface Student {
   firstName: string;
@@ -35,7 +36,7 @@ interface Student {
   location: string;
 }
 
-// StudentClass implementing Student
+// Class implementing Student
 class StudentClass implements Student {
   firstName: string;
   lastName: string;
@@ -60,5 +61,5 @@ class StudentClass implements Student {
 
 // Example usage
 const student1 = new StudentClass("Alice", "Johnson", 21, "Toronto");
-console.log(student1.displayName());  // Alice Johnson
-console.log(student1.workOnHomework()); // Currently working
+console.log(student1.displayName());        // Alice Johnson
+console.log(student1.workOnHomework());     // Currently working
