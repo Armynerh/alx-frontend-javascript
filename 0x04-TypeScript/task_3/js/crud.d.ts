@@ -1,4 +1,4 @@
-/// <reference types="node" />
+
 import { RowID, RowElement } from '../interface';
 
 export declare function insertRow(row: RowElement): RowID;
