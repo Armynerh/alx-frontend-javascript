@@ -1,6 +1,4 @@
-// task_1/js/main.ts
 
-// Teacher interface
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -10,13 +8,13 @@ interface Teacher {
   [propName: string]: any;
 }
 
-// Directors interface extending Teacher
-interface Directors extends Teacher {
+// Director interface extending Teacher
+interface Director extends Teacher {
   numberOfReports: number;
 }
 
 // Example usage
-const director1: Directors = {
+const director1: Director = {
   firstName: 'John',
   lastName: 'Doe',
   location: 'London',
